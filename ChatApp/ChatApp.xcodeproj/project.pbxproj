@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		180DD9C120D174B90061B554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9C020D174B90061B554 /* AppDelegate.swift */; };
-		180DD9C320D174B90061B554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9C220D174B90061B554 /* ViewController.swift */; };
+		180DD9C320D174B90061B554 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9C220D174B90061B554 /* ChatViewController.swift */; };
 		180DD9C620D174B90061B554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DD9C420D174B90061B554 /* Main.storyboard */; };
 		180DD9C820D174BA0061B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180DD9C720D174BA0061B554 /* Assets.xcassets */; };
 		180DD9CB20D174BA0061B554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DD9C920D174BA0061B554 /* LaunchScreen.storyboard */; };
 		180DD9D620D174BA0061B554 /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9D520D174BA0061B554 /* ChatAppTests.swift */; };
 		180DD9E120D174BB0061B554 /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9E020D174BB0061B554 /* ChatAppUITests.swift */; };
+		180DD9F220D183AB0061B554 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9F120D183AB0061B554 /* MyCustomCell.swift */; };
+		180DD9F420D183FB0061B554 /* FriendCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9F320D183FB0061B554 /* FriendCustomCell.swift */; };
+		180DDA3520D18B160061B554 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 180DDA3420D18B160061B554 /* TestJson.json */; };
+		180DDA3F20D18C770061B554 /* ChatAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DDA3D20D18C770061B554 /* ChatAppModel.xcdatamodeld */; };
+		180DDA4B20D192C20061B554 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DDA4A20D192C20061B554 /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		180DD9BD20D174B90061B554 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DD9C020D174B90061B554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		180DD9C220D174B90061B554 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180DD9C220D174B90061B554 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		180DD9C520D174B90061B554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180DD9C720D174BA0061B554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180DD9CA20D174BA0061B554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		180DD9DC20D174BB0061B554 /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180DD9E020D174BB0061B554 /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		180DD9E220D174BB0061B554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180DD9F120D183AB0061B554 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		180DD9F320D183FB0061B554 /* FriendCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCustomCell.swift; sourceTree = "<group>"; };
+		180DDA3420D18B160061B554 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+		180DDA3E20D18C770061B554 /* ChatAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatAppModel.xcdatamodel; sourceTree = "<group>"; };
+		180DDA4A20D192C20061B554 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,15 @@
 		180DD9BF20D174B90061B554 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				180DD9C020D174B90061B554 /* AppDelegate.swift */,
-				180DD9C220D174B90061B554 /* ViewController.swift */,
+				180DDA3420D18B160061B554 /* TestJson.json */,
+				180DD9F020D176CC0061B554 /* Models */,
+				180DD9EF20D176C60061B554 /* Controllers */,
+				180DD9EE20D176BD0061B554 /* Views */,
 				180DD9C420D174B90061B554 /* Main.storyboard */,
 				180DD9C720D174BA0061B554 /* Assets.xcassets */,
 				180DD9C920D174BA0061B554 /* LaunchScreen.storyboard */,
 				180DD9CC20D174BA0061B554 /* Info.plist */,
+				180DDA3D20D18C770061B554 /* ChatAppModel.xcdatamodeld */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -123,6 +136,32 @@
 				180DD9E220D174BB0061B554 /* Info.plist */,
 			);
 			path = ChatAppUITests;
+			sourceTree = "<group>";
+		};
+		180DD9EE20D176BD0061B554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				180DD9F120D183AB0061B554 /* MyCustomCell.swift */,
+				180DD9F320D183FB0061B554 /* FriendCustomCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		180DD9EF20D176C60061B554 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				180DD9C020D174B90061B554 /* AppDelegate.swift */,
+				180DD9C220D174B90061B554 /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		180DD9F020D176CC0061B554 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				180DDA4A20D192C20061B554 /* ChatModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +271,7 @@
 				180DD9CB20D174BA0061B554 /* LaunchScreen.storyboard in Resources */,
 				180DD9C820D174BA0061B554 /* Assets.xcassets in Resources */,
 				180DD9C620D174B90061B554 /* Main.storyboard in Resources */,
+				180DDA3520D18B160061B554 /* TestJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180DD9C320D174B90061B554 /* ViewController.swift in Sources */,
+				180DD9F420D183FB0061B554 /* FriendCustomCell.swift in Sources */,
+				180DD9F220D183AB0061B554 /* MyCustomCell.swift in Sources */,
+				180DDA3F20D18C770061B554 /* ChatAppModel.xcdatamodeld in Sources */,
+				180DD9C320D174B90061B554 /* ChatViewController.swift in Sources */,
 				180DD9C120D174B90061B554 /* AppDelegate.swift in Sources */,
+				180DDA4B20D192C20061B554 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +622,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		180DDA3D20D18C770061B554 /* ChatAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				180DDA3E20D18C770061B554 /* ChatAppModel.xcdatamodel */,
+			);
+			currentVersion = 180DDA3E20D18C770061B554 /* ChatAppModel.xcdatamodel */;
+			path = ChatAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 180DD9B520D174B90061B554 /* Project object */;
 }

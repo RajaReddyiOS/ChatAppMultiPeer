@@ -1,0 +1,36 @@
+[{
+    "id": "",
+    "timeStamp": 0,
+    "sentBy": {
+        "phoneNumber": "918143393531",
+        "message": "Hello how r u "
+    },
+    "sentTo": {
+        "phoneNumber": "918548850884",
+        "message": "Hello Am good "
+    }
+},
+{
+    "id": "",
+    "timeStamp": 0,
+    "sentBy": {
+        "phoneNumber": "918143393531",
+        "message": "Hello how r u "
+    },
+    "sentTo": {
+        "phoneNumber": "918548850884",
+        "message": "Hello Am good "
+    }
+},
+{
+    "id": "",
+    "timeStamp": 0,
+    "sentBy": {
+        "phoneNumber": "918143393531",
+        "message": "Hello how r u "
+    },
+    "sentTo": {
+        "phoneNumber": "918548850884",
+        "message": "Hello Am good "
+    }
+}]
