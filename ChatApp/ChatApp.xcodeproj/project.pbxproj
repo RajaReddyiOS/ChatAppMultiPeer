@@ -15,10 +15,11 @@
 		180DD9D620D174BA0061B554 /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9D520D174BA0061B554 /* ChatAppTests.swift */; };
 		180DD9E120D174BB0061B554 /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9E020D174BB0061B554 /* ChatAppUITests.swift */; };
 		180DD9F220D183AB0061B554 /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9F120D183AB0061B554 /* MyCustomCell.swift */; };
-		180DD9F420D183FB0061B554 /* FriendCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DD9F320D183FB0061B554 /* FriendCustomCell.swift */; };
 		180DDA3520D18B160061B554 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 180DDA3420D18B160061B554 /* TestJson.json */; };
 		180DDA3F20D18C770061B554 /* ChatAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DDA3D20D18C770061B554 /* ChatAppModel.xcdatamodeld */; };
 		180DDA4B20D192C20061B554 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DDA4A20D192C20061B554 /* ChatModel.swift */; };
+		18EE051520F0707A00726690 /* ChatVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE051420F0707A00726690 /* ChatVM.swift */; };
+		18EE051720F0732400726690 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE051620F0732400726690 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +54,11 @@
 		180DD9E020D174BB0061B554 /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		180DD9E220D174BB0061B554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180DD9F120D183AB0061B554 /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
-		180DD9F320D183FB0061B554 /* FriendCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCustomCell.swift; sourceTree = "<group>"; };
 		180DDA3420D18B160061B554 /* TestJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
 		180DDA3E20D18C770061B554 /* ChatAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatAppModel.xcdatamodel; sourceTree = "<group>"; };
 		180DDA4A20D192C20061B554 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		18EE051420F0707A00726690 /* ChatVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVM.swift; sourceTree = "<group>"; };
+		18EE051620F0732400726690 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		180DD9BF20D174B90061B554 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				18EE051320F0704900726690 /* ViewModel */,
 				180DDA3420D18B160061B554 /* TestJson.json */,
 				180DD9F020D176CC0061B554 /* Models */,
 				180DD9EF20D176C60061B554 /* Controllers */,
@@ -142,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				180DD9F120D183AB0061B554 /* MyCustomCell.swift */,
-				180DD9F320D183FB0061B554 /* FriendCustomCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +154,7 @@
 			children = (
 				180DD9C020D174B90061B554 /* AppDelegate.swift */,
 				180DD9C220D174B90061B554 /* ChatViewController.swift */,
+				18EE051620F0732400726690 /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +165,14 @@
 				180DDA4A20D192C20061B554 /* ChatModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		18EE051320F0704900726690 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18EE051420F0707A00726690 /* ChatVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180DD9F420D183FB0061B554 /* FriendCustomCell.swift in Sources */,
+				18EE051520F0707A00726690 /* ChatVM.swift in Sources */,
 				180DD9F220D183AB0061B554 /* MyCustomCell.swift in Sources */,
+				18EE051720F0732400726690 /* HomeController.swift in Sources */,
 				180DDA3F20D18C770061B554 /* ChatAppModel.xcdatamodeld in Sources */,
 				180DD9C320D174B90061B554 /* ChatViewController.swift in Sources */,
 				180DD9C120D174B90061B554 /* AppDelegate.swift in Sources */,

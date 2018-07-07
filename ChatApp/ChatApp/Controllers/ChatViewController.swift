@@ -12,11 +12,23 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView:UITableView!
     
+    var dataSet = [Message]()
+    
+    var channelId = "Channel 2"
+    
     fileprivate let myCellId = "myCellId"
     fileprivate let friendCellId = "friendCellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if let chats = ChatVM.sharedInstance.getData {
+            
+            for chat in chats {
+                dataSet = chat.messages
+            }
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -26,38 +38,17 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return dataSet.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: myCellId)!
-            return cell
-        }else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: friendCellId)!
-            return cell
-        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: myCellId) as! MyCustomCell
+        cell.message = dataSet[indexPath.row]
+        return cell
     }
 
-    func getData() {
-        if let path = Bundle.main.path(forResource: "TestJson", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                
-                
-                guard let jsonArray = try JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] else {return}
-                
-                for json in jsonArray {
-                    json
-                }
-                
-                
-                
-            }catch {
-                
-            }
-        }
-    }
+    
     
 }
 

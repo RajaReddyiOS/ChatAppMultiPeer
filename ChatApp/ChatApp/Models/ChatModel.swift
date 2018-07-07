@@ -8,18 +8,18 @@
 
 import Foundation
 
-struct Chat:Codable {
-    
-    var id = String()
-    var timeStamp = Int64()
-    struct sentBy:Codable {
-        var phoneNumber = String()
-        var message = String()
-    }
-    
-    struct sentTo:Codable {
-        var phoneNumber = String()
-        var message = String()
-    }
-    
+struct Chat: Codable {
+    let name: String
+    let messages: [Message]
 }
+
+struct Message: Codable {
+    let timeStamp: Int64
+    let text, senderName, senderID: String
+    
+    enum CodingKeys: String, CodingKey {
+        case timeStamp, text, senderName
+        case senderID = "senderId"
+    }
+}
+

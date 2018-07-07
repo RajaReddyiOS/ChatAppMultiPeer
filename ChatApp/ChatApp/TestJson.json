@@ -1,36 +1,53 @@
-[{
-    "id": "",
-    "timeStamp": 0,
-    "sentBy": {
-        "phoneNumber": "918143393531",
-        "message": "Hello how r u "
-    },
-    "sentTo": {
-        "phoneNumber": "918548850884",
-        "message": "Hello Am good "
-    }
-},
-{
-    "id": "",
-    "timeStamp": 0,
-    "sentBy": {
-        "phoneNumber": "918143393531",
-        "message": "Hello how r u "
-    },
-    "sentTo": {
-        "phoneNumber": "918548850884",
-        "message": "Hello Am good "
-    }
-},
-{
-    "id": "",
-    "timeStamp": 0,
-    "sentBy": {
-        "phoneNumber": "918143393531",
-        "message": "Hello how r u "
-    },
-    "sentTo": {
-        "phoneNumber": "918548850884",
-        "message": "Hello Am good "
-    }
-}]
+ [
+  {
+  "name": "Channel 1",
+  "messages": [
+               {
+               "timeStamp": 0,
+               "text": "Hey How r u!",
+               "senderName": "Raja",
+               "senderId": "foo"
+               },
+               {
+               "timeStamp": 0,
+               "text": "Hey Am good",
+               "senderName": "Reddy",
+               "senderId": "foo"
+               }
+               ]
+  },
+  {
+  "name": "Channel 2",
+  "messages": [
+               {
+               "timeStamp": 0,
+               "text": "Hey How r u!",
+               "senderName": "Raja",
+               "senderId": "foo"
+               },
+               {
+               "timeStamp": 0,
+               "text": "Hey Am good",
+               "senderName": "Reddy",
+               "senderId": "foo"
+               }
+               ]
+  },
+  {
+  "name": "Channel 3",
+  "messages": [
+               {
+               "timeStamp": 0,
+               "text": "Hey How r u!",
+               "senderName": "Raja",
+               "senderId": "foo"
+               },
+               {
+               "timeStamp": 0,
+               "text": "Hey Am good",
+               "senderName": "Reddy",
+               "senderId": "foo"
+               }
+               ]
+  }
+  ]
